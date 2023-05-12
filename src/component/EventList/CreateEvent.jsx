@@ -45,7 +45,7 @@ function CreateEvent() {
     }
     // console.log(data);
     e.preventDefault();
-    axios.post("http://localhost/event/create",{
+    axios.post("http://13.235.243.100/event/create",{
          name:data.name,
     description:data.description,
     date:data.date,

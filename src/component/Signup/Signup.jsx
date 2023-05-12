@@ -29,7 +29,7 @@ function Signup() {
     // console.log(data)
     e.preventDefault();
     axios
-      .post("http://localhost/user/register", {
+      .post("http://13.235.243.100/user/register", {
         username: data.username,
         email: data.email,
         password: data.password,

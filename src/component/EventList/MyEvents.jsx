@@ -24,7 +24,7 @@ let token=localStorage.getItem("auth-token")
 const toast=useToast();
   useEffect(() => {
     axios
-      .get("http://localhost/event/organize",{
+      .get("http://13.235.243.100/event/organize",{
         headers:{
             "auth-token":token
         }
@@ -45,7 +45,7 @@ const toast=useToast();
     let participant=re._id
     // console.log(eventid,participant )
     // console.log("like",e._id)
-    axios.put(`http://localhost/event/${eventid}/requests/${participant}`,{"accepted":"true"},{headers:{
+    axios.put(`http://13.235.243.100/event/${eventid}/requests/${participant}`,{"accepted":"true"},{headers:{
         "auth-token":token
     }}).then(res=>{
         setFlag(!flag)
@@ -69,7 +69,7 @@ const handlereject=(re,e)=>{
     let participant=re._id
     // console.log(eventid,participant )
     // console.log("like",e._id)
-    axios.put(`http://localhost/event/${eventid}/requests/${participant}`,{"accepted":"false"},{headers:{
+    axios.put(`http://13.235.243.100/event/${eventid}/requests/${participant}`,{"accepted":"false"},{headers:{
         "auth-token":token
     }}).then((res)=> {
         setFlag(!flag)

@@ -21,7 +21,7 @@ function EventPlayers() {
   const toast = useToast();
   useEffect(() => {
     // console.log(id,token,"token")
-    axios.get(`http://localhost/event/${id}/players`,{
+    axios.get(`http://13.235.243.100/event/${id}/players`,{
         headers: {
           'auth-token': token,
         }}).then((res) => setData(res.data)).catch((e)=>toast({

@@ -20,7 +20,7 @@ function EventDetail() {
 
   useEffect(() => {
     // console.log(id);
-    axios.get(`http://localhost/event/${id}`).then((res) => {
+    axios.get(`http://13.235.243.100/event/${id}`).then((res) => {
       setdata(res.data);
     });
   }, [id]);
@@ -36,7 +36,7 @@ function EventDetail() {
       });
     }
     axios
-      .post(`http://localhost/event/${id}/join`,null,{
+      .post(`http://13.235.243.100/event/${id}/join`,null,{
         headers: {
           'auth-token': token,
         }})
