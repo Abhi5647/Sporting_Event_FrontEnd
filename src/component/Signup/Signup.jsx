@@ -84,6 +84,8 @@ function Signup() {
           onChange={handlechange}
           placeholder="Enter Password"
         />
+        <br/>
+         <br/>
 
         <Center gap={5}>
           <Button colorScheme="green" type="submit" onClick={handlesubmit}>
