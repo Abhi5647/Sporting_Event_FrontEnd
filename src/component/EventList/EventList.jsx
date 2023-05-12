@@ -17,7 +17,7 @@ function EventList() {
 
   useEffect(() => {
     axios
-      .get("http://13.235.243.100/event/all")
+      .get("http://localhost/event/all")
       .then((res) => setData(res.data));
   }, []);
   // console.log(data, "data");

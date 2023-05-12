@@ -24,7 +24,7 @@ const toast = useToast();
         isClosable: true,
       })}
     axios
-      .get("http://13.235.243.100/event/eventcheck",{
+      .get("http://localhost/event/eventcheck",{
         headers:{
             "auth-token":token
         }
