@@ -29,7 +29,7 @@ function Login() {
     // console.log(data)
     e.preventDefault();
     axios
-      .post("http://localhost/user/login", {
+      .post("http://13.235.243.100/user/login", {
         username: data.username,
         password: data.password,
       })
